@@ -1,0 +1,136 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "employee-login;employee-logs-into-the-employee-self-service-portal",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Employee logs into the Employee Self-Service Portal",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1350219500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the employee is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3865049000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the employee enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4266750399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the employee click on sign in button",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 805392700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the employee should be redirected to the homepage",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 343779899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the employee navigates to the add certificate page",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5584903999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the employee uploads a certificate",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 726907500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the employee should see the request recorded message",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3893259699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 989311699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "employee-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Employee Login",
+    "tags": [],
+    "uri": "src\\test\\features\\employee-login.feature"
+  }
+]
