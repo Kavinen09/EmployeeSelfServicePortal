@@ -33,6 +33,13 @@ export class CertificationApprovalPage {
   private signOutButton = 'li.nav-user-menu .user-sign-out'; // Sign out button
   private loginPageHeader = '#kc-header-wrapper'; // To verify redirection to the login page
 
+  private myTasksMenu = '#my-tasks-menu'; // My Tasks menu item
+  private firstTaskRow = 'tr.pointer.task-not-viewed'; // First row in the task table
+  private commentBox = '#gp-comment'; // Comment box
+  private approveButton = 'button[test-id="Approve"]'; // Approve button
+
+
+
   // Method to open the login page
   async open() {
     await this.page.goto('https://globalsolutions-reference.gpi-test.globepayroll.net/ui/#/dashboard', {
@@ -121,4 +128,41 @@ export class CertificationApprovalPage {
     const headerText = await loginPageHeader.textContent();
     expect(headerText).toContain('globalsolutions-reference');
   }
+
+  async clickMyTasksMenu() {
+  const myTasksMenuLocator = this.page.locator(this.myTasksMenu);
+  await myTasksMenuLocator.click(); // Click on "My Tasks" menu
+  }
+  
+  // Method to click on the first task row
+  async clickFirstTaskRow() {
+    const firstTaskRowLocator = this.page.locator(this.firstTaskRow);
+    await firstTaskRowLocator.click(); // Click on the first task row
+  }
+
+  // Method to fill the comment box
+ async fillCommentBox(commentText: string) {
+  const commentBoxLocator = this.page.locator(this.commentBox);
+  await commentBoxLocator.fill(commentText); // Fill the comment box with the provided text
+}
+
+  // Method to click the approve button
+  async clickApproveButton() {
+    const approveButtonLocator = this.page.locator(this.approveButton);
+    await approveButtonLocator.click(); // Click the approve button
+  }
+
+  // Method to verify if the success message is shown
+  async verifyApprovalSuccess() {
+    const successToastLocator = this.page.locator('div.toast-message:has-text("You successfully completed the task.")');
+  await successToastLocator.waitFor({ state: 'visible', timeout: 30000 });
+
+  // Get the text content and assert that it's not null
+  const successMessageText = await successToastLocator.textContent();
+  
+  // Assert that successMessageText is not null and contains the expected text
+  expect(successMessageText).toBeTruthy(); // Ensures the message is not null or undefined
+  expect(successMessageText).toContain('You successfully completed the task.');
+  }
+  
 }
