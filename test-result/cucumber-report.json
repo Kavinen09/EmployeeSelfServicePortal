@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "employee-login;employee-logs-into-the-employee-self-service-portal",
+        "id": "certification-approval;certification-validation-and-approval-process",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Employee logs into the Employee Self-Service Portal",
+        "name": "Certification Validation and Approval Process",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 925963700
+              "duration": 1203464900
             }
           },
           {
@@ -23,63 +23,63 @@
             "line": 5,
             "name": "the employee is on the login page",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:7"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 17165605999
+              "duration": 3479964799
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "the employee enters valid credentials",
+            "name": "the employee fills the login form with valid credentials",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:16"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 4519430799
+              "duration": 1926841300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the employee click on sign in button",
+            "name": "the employee clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:21"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1585336299
+              "duration": 967697500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "the employee should be redirected to the homepage",
+            "name": "the employee should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:26"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 203275900
+              "duration": 260668999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "the employee navigates to the add certificate page",
+            "name": "the employee navigates to the add certifications page",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:33"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 9098900799
+              "duration": 6934589300
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 10,
             "name": "the employee uploads a certificate",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:38"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 5286667300
+              "duration": 6778610899
             }
           },
           {
@@ -101,37 +101,37 @@
             "line": 11,
             "name": "the employee should see the request recorded message",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:43"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 2905863199
+              "duration": 3179112300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "the employee should sign out",
+            "name": "the employee clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:48"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:52"
             },
             "result": {
               "status": "passed",
-              "duration": 375125399
+              "duration": 3352454200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "be redirected to the login page",
+            "name": "the employee should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\empLoginSteps.ts:54"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:57"
             },
             "result": {
               "status": "passed",
-              "duration": 2536764600
+              "duration": 2488555000
             }
           },
           {
@@ -139,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 548800799
+              "duration": 540138099
             }
           }
         ],
@@ -152,11 +152,11 @@
         "type": "scenario"
       }
     ],
-    "id": "employee-login",
+    "id": "certification-approval",
     "line": 1,
     "keyword": "Feature",
-    "name": "Employee Login",
+    "name": "Certification Approval",
     "tags": [],
-    "uri": "src\\test\\features\\employee-login.feature"
+    "uri": "src\\test\\features\\certification-approval.feature"
   }
 ]
