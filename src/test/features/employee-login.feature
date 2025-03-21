@@ -9,6 +9,5 @@ Feature: Employee Login
         And the employee navigates to the add certificate page
         And the employee uploads a certificate
         Then the employee should see the request recorded message
-
-
-
+        Then the employee should sign out
+        And be redirected to the login page

@@ -37,10 +37,22 @@ When('the employee navigates to the add certificate page', async function () {
 
 When('the employee uploads a certificate', async function () {
   // Upload a certificate by providing the file path
-  await employeeLoginPage.uploadCertificate('C:/Users/sd273019/Downloads/certificationGP.jpg');
+  await employeeLoginPage.uploadCertificate('downloads/certificationGP.jpg');
 });
 
 Then('the employee should see the request recorded message', async function () {
   // Verify that the request was recorded and validated
   await employeeLoginPage.verifyRequestRecorded();
+});
+
+Then('the employee should sign out', async function () {
+
+  await employeeLoginPage.signOut(); // Call the sign-out method to perform the logout action
+
+});
+
+Then('be redirected to the login page', async function () {
+
+  await employeeLoginPage.verifyRedirectedToLoginPage(); // Verify the redirection to the login page
+  
 });

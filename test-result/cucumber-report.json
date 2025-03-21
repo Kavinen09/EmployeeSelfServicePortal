@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1350219500
+              "duration": 925963700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3865049000
+              "duration": 17165605999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4266750399
+              "duration": 4519430799
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 805392700
+              "duration": 1585336299
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 343779899
+              "duration": 203275900
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5584903999
+              "duration": 9098900799
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 726907500
+              "duration": 5286667300
             }
           },
           {
@@ -105,7 +105,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3893259699
+              "duration": 2905863199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the employee should sign out",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375125399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "be redirected to the login page",
+            "match": {
+              "location": "src\\test\\steps\\empLoginSteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2536764600
             }
           },
           {
@@ -113,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 989311699
+              "duration": 548800799
             }
           }
         ],
