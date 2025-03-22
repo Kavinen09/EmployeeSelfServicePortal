@@ -3,6 +3,7 @@ import { CertificationApprovalPage } from '../pages/certificationApprovalPage'; 
 import { LoginData } from '../../../test-data/certificationApproval-data';
 import { expect } from 'playwright/test';
 
+
 let certificationApprovalpage: CertificationApprovalPage;
 
 Given('the employee is on the login page', async function () {
@@ -101,4 +102,59 @@ When('the manager clicks the Approve button', async () => {
 Then('the request should be approved successfully', async () => {
   // Verify if the success message is shown
   await certificationApprovalpage.verifyApprovalSuccess();
+});
+
+//Manager signs out
+When('the manager clicks the sign-out button', async () => {
+  await certificationApprovalpage.openUserDropdown(); // Open the dropdown
+  await certificationApprovalpage.clickSignOut();  // Call the sign-out method
+});
+
+Then('the manager should be redirected to the login page', async () => {
+  await certificationApprovalpage.verifyRedirectedToLoginPage();  // Verify redirection to the login page
+});
+
+// HR user logs in
+When('the HR user is on the login page', async () => {
+  await certificationApprovalpage.open();  // Open the login page
+});
+
+When('the HR user fills the login form with valid HR credentials', async () => {
+  const { username, password } = LoginData.HR;
+  await certificationApprovalpage.fillLoginForm(username, password);  // Pass HR credentials
+});
+
+When('the HR user clicks the sign-in button', async () => {
+  await certificationApprovalpage.clickSignIn();  // Click the sign-in button
+});
+
+Then('the HR user should see that the page title is "SD Worx"', async () => {
+  await certificationApprovalpage.verifyPageTitle('SD Worx');  // Assert that the page title is correct
+});
+
+// Step to click the notifications bell icon (to open the notification list)
+Given('the HR user hover on the notifications bell', async () => {
+  await certificationApprovalpage.hoverOverNotificationBell(); // Hover on the bell icon
+});
+
+// Step to click the first notification item in the list
+When('the HR user clicks on the first notification', async () => {
+   await certificationApprovalpage.clickFirstNotification(); // Click the first notification
+});
+
+Then('the HR user should see the notification with the title {string}', async (title: string) => {
+  await certificationApprovalpage.isNotificationWithTitleVisible(title); // Verify that the title matches the expected
+
+});
+
+Then('the HR user should see the notification with the message {string}', async (message: string) => {
+    await certificationApprovalpage.verifyNotificationBody(message); // Verify that the message matches the expected
+});
+
+When('the HR user clicks the sign-out button', async function () {
+  await certificationApprovalpage.clickHrSignOutButton();  // Call the method to click sign out
+});
+
+Then('the HR user should be redirected correctly to the login page', async function () {
+  await certificationApprovalpage.verifyLoginPage();  // Call the method to verify the login page
 });
