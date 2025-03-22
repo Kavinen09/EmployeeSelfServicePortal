@@ -50,6 +50,13 @@ export class CertificationApprovalPage {
   private hrsignOutButton = 'a.dropdown-item.user-sign-out'
   private hrDropdownMenu = '.nav-item.dropdown.nav-user-menu .dropdown-menu'
 
+// Locators for employee
+  private empNotificationBell = '[test-id="navbar-notifications"]'; // Notifications bell icon
+  private firstEmployeeNotificationItem  = '.dropdown-menu .sl-item:nth-child(1) .sl-content .pointer'; // First notification item 
+  private empNotificationTitle = '.notifications-list .notification-title'; // Locator for the title of the notification
+  private empNotificationMessage = '.notifications-list .notification:first-of-type .notification-description'; // Locator for the message
+
+
   // Method to open the login page
   async open() {
     await this.page.goto('https://globalsolutions-reference.gpi-test.globepayroll.net/ui/#/dashboard', {
@@ -267,6 +274,100 @@ export class CertificationApprovalPage {
     const headerText = await loginPageHeader.textContent();
     expect(headerText).toContain('globalsolutions-reference');
     
+  }
+
+    async hoverOverEmpNotificationBell(){
+    const bell = this.page.locator(this.empNotificationBell);
+    await bell.waitFor({ state: 'visible', timeout: 15000 }); // Wait for bell to appear
+    await bell.hover(); // Hover to show the notification dropdown
+
+    // Optional: Wait for the dropdown to appear
+    await this.page.waitForTimeout(500); // Wait half a second for dropdown to appear
+  }
+  
+
+  async clickFirstEmployeeNotification() {
+    const firstNotification = this.page.locator(this.firstEmployeeNotificationItem );
+    await firstNotification.waitFor({ state: 'visible', timeout: 15000 }); // Wait for first notification to appear
+    await firstNotification.click(); // Click the first notification
+
+    // Wait for the notification details to load
+    const notificationDetailsLocator = '.notificationDetails'; // Adjust the locator if needed
+    await this.page.locator(notificationDetailsLocator).waitFor({ state: 'visible', timeout: 15000 });
+  }
+
+  // Method to check if the notification with the expected title is visible
+  async isEmployeeNotificationWithTitleVisible(expectedTitle: string) {
+     // Locate the first notification title (use .first() to select the first element)
+  const notificationTitle = this.page.locator('.notifications-list .notification-title').first();
+
+  // Wait for the notification to be visible
+  await notificationTitle.waitFor({ state: 'visible', timeout: 20000 });
+
+  // Get the title text and trim it
+  const actualTitle = await notificationTitle.textContent();
+
+  // Normalize spaces (replace multiple spaces with a single space)
+  const normalizedActualTitle = actualTitle?.replace(/\s+/g, ' ').trim();
+
+  // Normalize the expected title in the same way
+  const normalizedExpectedTitle = expectedTitle.replace(/\s+/g, ' ').trim();
+
+  // Assert that the normalized actual title matches the normalized expected title
+  expect(normalizedActualTitle).toBe(normalizedExpectedTitle);
+  }
+
+  // Method to verify the notification body content for the employee
+  async verifyEmployeeNotificationBody(expectedMessage: string) {
+    // Locate the first (latest) notification
+    const latestNotification = this.page.locator(this.empNotificationMessage).first();
+    // Wait for the latest notification to be visible
+    await latestNotification.waitFor({ state: 'visible', timeout: 20000 });
+    // Get the actual message text from the latest notification
+    const actualMessage = await latestNotification.textContent(); // Use textContent to get the exact text
+    // Check if the message is null
+    if (actualMessage === null) {
+      throw new Error("Notification message is null, unable to verify the content.");
+    }
+    // Clean up the actual message: Remove unwanted parts, trim, and normalize spaces
+    const cleanedMessage = actualMessage
+      .replace(/[\u2022|\u00B7]\s*/g, '') // Remove bullet points and extra spaces
+      .replace(/KvnTest Emp has requested changes in Certifications[^.]+/g, '') // Remove the part about the request being made
+      .replace(/\s+/g, ' ')  // Normalize spaces (replace multiple spaces with a single space)
+      .trim(); // Trim leading and trailing spaces
+    // Log the cleaned actual message for debugging purposes (optional, can be removed later)
+    console.log(`Cleaned actual notification body: ${cleanedMessage}`);
+    // Assert that the actual cleaned message contains the expected comment
+    expect(cleanedMessage).toContain('The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.');
+  }
+
+  // Method to navigate to the Add Certifications page
+  async navigateToAddCertificationsPage() {
+    // Locate and click the button or link to navigate to the Add Certifications page
+    const addCertificationsButton = this.page.locator('button[title="Add Certifications"]'); // Adjust locator as needed
+    await addCertificationsButton.waitFor({ state: 'visible', timeout: 15000 });
+    await addCertificationsButton.click();
+    
+    // Wait for the Add Certifications page to load
+    const addCertificationsPageLocator = '.add-certifications-page'; // Adjust locator as needed
+    await this.page.locator(addCertificationsPageLocator).waitFor({ state: 'visible', timeout: 15000 });
+  }
+
+ // Method to verify that at least one certification is present
+    async verifyCertificationIsPresent() {
+   // Locate the certification data card element containing the certification text
+  const certificateLocator = this.page.locator('gp-contract-data-card .box-body .form-group ._500');
+  
+  // Wait for the first certification text to be visible (adjust timeout as needed)
+  await certificateLocator.first().waitFor({ state: 'visible', timeout: 15000 });
+  
+  // Assert that the certification text is not empty
+  const certificationText = await certificateLocator.first().innerText();
+  expect(certificationText).not.toBe(''); // Ensure certification text is present
+  
+  // Optionally: You can also check if it contains a specific certification name
+  const expectedCertificationText = "Certification 1 (Driving licence)"; // Update with the expected certification text
+  expect(certificationText).toContain(expectedCertificationText); // Verify it contains expected text
   }
 
 

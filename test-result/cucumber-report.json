@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1395733899
+              "duration": 1934296399
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26986132299
+              "duration": 26805553800
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6210001600
+              "duration": 6135506900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2202666600
+              "duration": 1677182300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 293302300
+              "duration": 308000199
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14124063800
+              "duration": 15703150799
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9284999000
+              "duration": 8810058799
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6319665999
+              "duration": 6276567200
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376229099
+              "duration": 397903599
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3216247799
+              "duration": 2893571600
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 340036399
+              "duration": 418149999
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1402454500
+              "duration": 1473737500
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 784700600
+              "duration": 833977799
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 295102599
+              "duration": 310269299
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1493502000
+              "duration": 1188790099
             }
           },
           {
@@ -209,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 887248800
+              "duration": 865209399
             }
           },
           {
@@ -222,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2915018799
+              "duration": 3467046800
             }
           },
           {
@@ -235,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 69949199
+              "duration": 69468099
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1883884299
+              "duration": 1862190900
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5971857000
+              "duration": 5407505399
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2522386599
+              "duration": 2607023800
             }
           },
           {
@@ -287,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321843299
+              "duration": 432365399
             }
           },
           {
@@ -300,7 +300,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1886945099
+              "duration": 1482087299
             }
           },
           {
@@ -313,7 +313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 778434699
+              "duration": 797338900
             }
           },
           {
@@ -326,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 259589500
+              "duration": 353873699
             }
           },
           {
@@ -339,7 +339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1923304700
+              "duration": 1953373600
             }
           },
           {
@@ -352,7 +352,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1023321400
+              "duration": 929117299
             }
           },
           {
@@ -365,7 +365,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2435066400
+              "duration": 2382369000
             }
           },
           {
@@ -378,7 +378,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11728000
+              "duration": 14714399
             }
           },
           {
@@ -391,7 +391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 372123399
+              "duration": 384162499
             }
           },
           {
@@ -404,7 +404,124 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2713429999
+              "duration": 2436976600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "the employee fills the login form with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58778299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the employee clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 885526299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the employee should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 323102200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "the employee hover on the notifications bell",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:162"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1975815000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the employee clicks on the first notification",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:166"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437428299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "the employee should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:170"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1364610600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "the employee should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:175"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11696700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the employee navigates to the add certifications page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7099420499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "the employee should see certificate is present",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:179"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41312799
             }
           },
           {
@@ -412,7 +529,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 906392200
+              "duration": 753488200
             }
           }
         ],

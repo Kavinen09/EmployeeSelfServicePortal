@@ -158,3 +158,24 @@ When('the HR user clicks the sign-out button', async function () {
 Then('the HR user should be redirected correctly to the login page', async function () {
   await certificationApprovalpage.verifyLoginPage();  // Call the method to verify the login page
 });
+
+Given('the employee hover on the notifications bell', async () => {
+  await certificationApprovalpage.hoverOverEmpNotificationBell(); // Hover on the bell icon
+});
+
+Given('the employee clicks on the first notification', async () => {
+  await certificationApprovalpage.clickFirstEmployeeNotification(); // Hover on the bell icon
+});
+
+Then('the employee should see the notification with the title {string}', async (title: string) => {
+  await certificationApprovalpage.isEmployeeNotificationWithTitleVisible(title); // Verify that the title matches the expected
+
+});
+
+Then('the employee should see the notification with the message {string}', async (message: string) => {
+    await certificationApprovalpage.verifyEmployeeNotificationBody(message); // Verify that the message matches the expected
+});
+
+Then('the employee should see certificate is present', async function () {
+  await certificationApprovalpage.verifyCertificationIsPresent();
+});
