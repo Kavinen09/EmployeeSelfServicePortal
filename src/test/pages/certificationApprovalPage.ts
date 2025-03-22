@@ -153,7 +153,7 @@ export class CertificationApprovalPage {
   
   // Method to click on the first task row
   async clickFirstTaskRow() {
-    const firstTaskRowLocator = this.page.locator(this.firstTaskRow);
+    const firstTaskRowLocator = this.page.locator(this.firstTaskRow).first();
     await firstTaskRowLocator.click(); // Click on the first task row
   }
 
