@@ -36,3 +36,13 @@ Feature: Certification Approval
         Then the HR user should see the notification with the message "The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve."
         Then the HR user clicks the sign-out button
         And the HR user should be redirected correctly to the login page
+        #Login again as an employee
+        When the employee fills the login form with valid credentials
+        And the employee clicks the sign-in button
+        Then the employee should see that the page title is "SD Worx"
+        Given the employee hover on the notifications bell
+        And the employee clicks on the first notification
+        Then the employee should see the notification with the title "Changes in Certifications for KvnTest Emp were approved"
+        Then the employee should see the notification with the message "The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve."
+        And the employee navigates to the add certifications page
+        Then the employee should see certificate is present
