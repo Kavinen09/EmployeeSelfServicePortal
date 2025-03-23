@@ -1,4 +1,4 @@
-Feature: Certification Process
+Feature: Employee Certification Workflow
 
     @positive
     Scenario: Successful Certification Submission and Approval
@@ -95,3 +95,13 @@ Feature: Certification Process
         Then the employee should see the decline notification with the message "The request was declined by KvnTest Man"
         And the employee navigates to the add certifications page
         Then the employee should see "negativeGP.jpg" certificate is not present
+
+    @edge
+    Scenario: Employee uploads a file exceeding the maximum allowed size.
+        Given the employee is on the login page
+        When the employee fills the login form with valid credentials
+        And the employee clicks the sign-in button
+        Then the employee should see that the page title is "SD Worx"
+        And the employee navigates to the add certifications page
+        And the employee uploads a file exceeding the maximum size limit of 5MB
+        Then the employee should see a "Server error" message indicating that the file size exceeds the limit
