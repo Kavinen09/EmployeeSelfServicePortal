@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "certification-approval;certification-validation-and-approval-process",
+        "id": "certification-process;successful-certification-submission-and-approval",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Certification Validation and Approval Process",
+        "name": "Successful Certification Submission and Approval",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1682123200
+              "duration": 1657255100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26367097599
+              "duration": 11731154200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6133087999
+              "duration": 4784595799
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1982106500
+              "duration": 1290038500
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 251567699
+              "duration": 312937799
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17962926299
+              "duration": 26797551899
             }
           },
           {
@@ -92,436 +92,449 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10845105999
+              "duration": 20118083899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "the employee should see the request recorded message",
+            "name": "the employee should see the file name of the uploaded certificate displayed",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:49"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 8442204000
+              "duration": 11943299
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "the employee clicks the sign-out button",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 484651499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the employee should be redirected correctly to the login page",
+            "name": "the employee should see the request recorded message",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:59"
             },
             "result": {
               "status": "passed",
-              "duration": 3454761599
+              "duration": 15663979400
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "the manager is on the login page",
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the employee clicks the sign-out button",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:64"
             },
             "result": {
               "status": "passed",
-              "duration": 345997999
+              "duration": 423630099
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "the manager fills the login form with valid manager credentials",
+            "keyword": "And ",
+            "line": 14,
+            "name": "the employee should be redirected correctly to the login page",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:69"
             },
             "result": {
               "status": "passed",
-              "duration": 1384588600
+              "duration": 4764683499
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the manager clicks the sign-in button",
+            "keyword": "Given ",
+            "line": 16,
+            "name": "the manager is on the login page",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:74"
             },
             "result": {
               "status": "passed",
-              "duration": 755346200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "the manager should see that the page title is \"SD Worx\"",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:78"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 384150299
+              "duration": 360352399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 20,
-            "name": "the manager clicks on the My Tasks menu",
+            "line": 17,
+            "name": "the manager fills the login form with valid manager credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:83"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:79"
             },
             "result": {
               "status": "passed",
-              "duration": 1060983200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "the manager clicks on the first task row",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:87"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1374328099
+              "duration": 1679284699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
-            "name": "the manager types in the comment box with the text \"Certification Valid. Request approve.\"",
+            "line": 18,
+            "name": "the manager clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:92"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:84"
             },
             "result": {
               "status": "passed",
-              "duration": 2921171000
+              "duration": 769955000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the manager should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 321275600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the manager clicks on the My Tasks menu",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1148550999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the manager clicks on the first task row",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1407728799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "the manager clicks the Approve button",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:97"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 63282099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "the request should be approved successfully",
+            "name": "the manager types in the comment box with the text \"Certification Valid. Request approve.\"",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:102"
             },
             "result": {
               "status": "passed",
-              "duration": 4398034799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "the manager clicks the sign-out button",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5494057199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "the manager should be redirected to the login page",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:113"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2369292100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "the HR user is on the login page",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:118"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 331590599
+              "duration": 2891540800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
-            "name": "the HR user fills the login form with valid HR credentials",
+            "line": 24,
+            "name": "the manager clicks the Approve button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:122"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:112"
             },
             "result": {
               "status": "passed",
-              "duration": 1394176299
+              "duration": 199233200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the request should be approved successfully",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859518299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the manager clicks the sign-out button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5458958299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the manager should be redirected to the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2813788699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "the HR user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 346602099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "the HR user clicks the sign-in button",
+            "name": "the HR user fills the login form with valid HR credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:127"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:149"
             },
             "result": {
               "status": "passed",
-              "duration": 757751000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 31,
-            "name": "the HR user should see that the page title is \"SD Worx\"",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:131"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 248873900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 33,
-            "name": "the HR user hover on the notifications bell",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:136"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1922894000
+              "duration": 1450729600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
-            "name": "the HR user clicks on the first notification",
+            "line": 31,
+            "name": "the HR user clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:141"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:154"
             },
             "result": {
               "status": "passed",
-              "duration": 560110500
+              "duration": 757985199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
-            "name": "the HR user should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
+            "line": 32,
+            "name": "the HR user should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:158"
             },
             "result": {
               "status": "passed",
-              "duration": 2379286800
+              "duration": 262616300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "the HR user hover on the notifications bell",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:163"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1953192300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the HR user clicks on the first notification",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:168"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1241991999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 36,
-            "name": "the HR user should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
+            "name": "the HR user should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:150"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:172"
             },
             "result": {
               "status": "passed",
-              "duration": 13415099
+              "duration": 1859512000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 37,
-            "name": "the HR user clicks the sign-out button",
+            "name": "the HR user should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:154"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:177"
             },
             "result": {
               "status": "passed",
-              "duration": 390252900
+              "duration": 12389599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the HR user clicks the sign-out button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:192"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377210700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 38,
+            "line": 39,
             "name": "the HR user should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:158"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:196"
             },
             "result": {
               "status": "passed",
-              "duration": 2224119099
+              "duration": 2865263599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 40,
+            "line": 41,
             "name": "the employee fills the login form with valid credentials",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 37653099
+              "duration": 35146099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
+            "line": 42,
             "name": "the employee clicks the sign-in button",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 771051500
+              "duration": 929334699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
+            "line": 43,
             "name": "the employee should see that the page title is \"SD Worx\"",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 283256200
+              "duration": 288395799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 43,
+            "line": 44,
             "name": "the employee hover on the notifications bell",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:162"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:200"
             },
             "result": {
               "status": "passed",
-              "duration": 1968021099
+              "duration": 1949015899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 44,
+            "line": 45,
             "name": "the employee clicks on the first notification",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:166"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:204"
             },
             "result": {
               "status": "passed",
-              "duration": 414449399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 45,
-            "name": "the employee should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
-            "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:170"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1373673600
+              "duration": 940622400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 46,
-            "name": "the employee should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
+            "name": "the employee should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:175"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:208"
             },
             "result": {
               "status": "passed",
-              "duration": 11979599
+              "duration": 846611199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "the employee should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:213"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13677700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 47,
+            "line": 48,
             "name": "the employee navigates to the add certifications page",
             "match": {
               "location": "src\\test\\steps\\certificationApprovalSteps.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 8243383400
+              "duration": 12225299799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
+            "line": 49,
             "name": "the employee should see certificate is present",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:179"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:228"
             },
             "result": {
               "status": "passed",
-              "duration": 27073499
+              "duration": 23160000
             }
           },
           {
@@ -529,7 +542,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 650227400
+              "duration": 750295299
             }
           }
         ],
@@ -540,12 +553,564 @@
           }
         ],
         "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "certification-process;manager-rejects-the-certification-without-providing-a-reason-leading-to-confusion",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Manager rejects the certification without providing a reason leading to confusion",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1574638399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 53,
+            "name": "the employee is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14260062199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "the employee fills the login form with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2627205600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "the employee clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1019988800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "the employee should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219986900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "the employee navigates to the add certifications page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16083895700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "the employee uploads a valid certificate",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11299507099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "the employee should see the valid file name of the uploaded certificate displayed",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7283600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "the employee should see the request recorded message",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9995790399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "the employee clicks the sign-out button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373573699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "the employee should be redirected correctly to the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3125655100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "the manager is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 387210700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 65,
+            "name": "the manager fills the login form with valid manager credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1752942899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "the manager clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020019700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "the manager should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416619700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 69,
+            "name": "the manager clicks on the My Tasks menu",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1157477799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 70,
+            "name": "the manager clicks on the first task row",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1386875000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "the manager leaves the comment box empty",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2377057299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the manager clicks the Decline button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172400599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "the request should be declined successfully",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:129"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 851310200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "the manager clicks the sign-out button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5956259900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "the manager should be redirected to the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3375479900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 77,
+            "name": "the HR user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397743199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "the HR user fills the login form with valid HR credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:149"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1625546700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "the HR user clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 810447000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 80,
+            "name": "the HR user should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314524099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 82,
+            "name": "the HR user hover on the notifications bell",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:163"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1961221499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "the HR user clicks on the first notification",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:168"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 807809600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "the HR user should see the decline notification with the title \"Changes in Certifications for KvnTest Emp were declined\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:182"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2388133999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "the HR user should see the decline notification with the message \"The request was declined by KvnTest Man\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:187"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11474299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "the HR user clicks the sign-out button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:192"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 486304100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "the HR user should be redirected correctly to the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2393380899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "the employee fills the login form with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51535100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 90,
+            "name": "the employee clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 816450000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 91,
+            "name": "the employee should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325917599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 92,
+            "name": "the employee hover on the notifications bell",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1964024600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 93,
+            "name": "the employee clicks on the first notification",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:204"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 937668599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 94,
+            "name": "the employee should see the decline notification with the title \"Changes in Certifications for KvnTest Emp were declined\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:218"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 857372499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 95,
+            "name": "the employee should see the decline notification with the message \"The request was declined by KvnTest Man\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:223"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10750199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "the employee navigates to the add certifications page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8039754099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "the employee should see \"negativeGP.jpg\" certificate is not present",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:232"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13092300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 597162899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 51
+          }
+        ],
+        "type": "scenario"
       }
     ],
-    "id": "certification-approval",
+    "id": "certification-process",
     "line": 1,
     "keyword": "Feature",
-    "name": "Certification Approval",
+    "name": "Certification Process",
     "tags": [],
     "uri": "src\\test\\features\\certification-approval.feature"
   }

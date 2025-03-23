@@ -24,6 +24,7 @@ export class CertificationApprovalPage {
   private fileInputTextbox = 'label:has-text("Choose or drop a file")';  // File input field
   private fileSavedMessage = 'li:has-text("File saved")'; // File saved message displayed
   private fileName = 'label:has-text("certificationGP.jpg")'; // File name displayed after "File saved"
+  private validFileName = 'label:has-text("negativeGP.jpg")'; // File name displayed after "File saved"
   private submitButton = 'button:has-text("Submit")';  // Submit button after adding the certificate
   private successMessage = 'div[role="alert"]:has-text("Your request was recorded.")';  // Success message after submission
   private validationMessage = 'div.col-right--warning:has-text("Your request is in the process of being validated.")';  // Validation message
@@ -56,6 +57,8 @@ export class CertificationApprovalPage {
   private empNotificationTitle = '.notifications-list .notification-title'; // Locator for the title of the notification
   private empNotificationMessage = '.notifications-list .notification:first-of-type .notification-description'; // Locator for the message
 
+
+  private declineButton = 'button[test-id="Decline"]';
 
   // Method to open the login page
   async open() {
@@ -126,6 +129,38 @@ export class CertificationApprovalPage {
     await validationMessageLocator.waitFor({ state: 'visible', timeout: 60000 });
   }
 
+
+  // Method to upload a certificate
+  async uploadValidCertificate(filePath: string) {
+    await this.page.locator(this.certificationDropdown).first().click();
+    await this.page.locator(this.certificationLink).click();
+    await this.page.locator(this.fileInputTextbox).setInputFiles(filePath);
+
+    const fileSavedLocator = this.page.locator(this.fileSavedMessage);
+    await fileSavedLocator.waitFor({ state: 'visible', timeout: 60000 });
+    await fileSavedLocator.waitFor({ state: 'detached' });
+
+    const fileNameLocator = this.page.locator(this.validFileName);
+    await fileNameLocator.waitFor({ state: 'visible', timeout: 60000 });
+
+    await this.page.locator(this.submitButton).click();
+  }
+
+  // Method to verify that the file name is displayed
+  async verifyValidFileNameDisplayed(expectedFileName: string) {
+    const fileNameLocator = this.page.locator(`label:has-text("${expectedFileName}")`);
+    await fileNameLocator.waitFor({ state: 'visible', timeout: 60000 });
+  }
+  // Method to check the success message after submission
+  async verifyValidRequestRecorded() {
+    const toastLocator = this.page.locator(this.successMessage);
+    await toastLocator.waitFor({ state: 'visible', timeout: 60000 });
+
+    const validationMessageLocator = this.page.locator(this.validationMessage);
+    await validationMessageLocator.waitFor({ state: 'visible', timeout: 60000 });
+  }
+
+
   // Method to sign out
   async signOut() {
     const userProfileDropdown = this.page.locator(this.userProfile);
@@ -163,6 +198,12 @@ export class CertificationApprovalPage {
     await commentBoxLocator.fill(commentText); // Fill the comment box with the provided text
   }
 
+  // Method to clear the comment box (leave it empty)
+async clearCommentBox() {
+  const commentBoxLocator = this.page.locator(this.commentBox);
+  await commentBoxLocator.fill('');  // Clear the comment box
+}
+
   // Method to click the approve button
   async clickApproveButton() {
     const approveButtonLocator = this.page.locator(this.approveButton);
@@ -179,6 +220,23 @@ export class CertificationApprovalPage {
   
     // Assert that successMessageText is not null and contains the expected text
     expect(successMessageText).toBeTruthy(); // Ensures the message is not null or undefined
+    expect(successMessageText).toContain('You successfully completed the task.');
+  }
+
+  async clickDeclineButton() {
+  const declineButtonLocator = this.page.locator(this.declineButton);
+  await declineButtonLocator.click();  // Click the decline button
+  }
+  
+   // Method to verify that the decline action was successful
+  async verifyDeclineSuccess() {
+    const successMessageLocator = this.page.locator('div.toast-message:has-text("You successfully completed the task.")'); // Update with actual success message locator
+    await successMessageLocator.waitFor({ state: 'visible', timeout: 30000 });
+
+    const successMessageText = await successMessageLocator.textContent();
+
+    // Assert that the success message contains "You declined the task."
+    expect(successMessageText).toBeTruthy();
     expect(successMessageText).toContain('You successfully completed the task.');
   }
 
@@ -245,6 +303,46 @@ export class CertificationApprovalPage {
   // Assert that the actual cleaned message contains the expected comment
   expect(cleanedMessage).toContain('The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.');
   }
+
+
+  // Method to verify the notification title (Negative Flow)
+async isNegativeNotificationWithTitleVisible(expectedTitle: string) {
+    const titleLocator = this.page.locator(this.notificationTitle);
+    await titleLocator.waitFor({ state: 'visible', timeout: 15000 }); // Wait for the title to appear
+    const actualTitle = await titleLocator.innerText();
+    expect(actualTitle).toBe(expectedTitle); // Assert the title matches the expected value
+}
+
+// Method to verify the notification body (Negative Flow)
+async verifyNegativeNotificationBody(expectedMessage: string) {
+    // Locate the first (latest) notification
+    const latestNotification = this.page.locator('.notifications-list .notification-description').first();
+    
+    // Wait for the latest notification to be visible
+    await latestNotification.waitFor({ state: 'visible', timeout: 20000 });
+    
+    // Get the actual message text from the latest notification
+    const actualMessage = await latestNotification.textContent();
+    
+    // Check if the message is null
+    if (actualMessage === null) {
+        throw new Error("Notification message is null, unable to verify the content.");
+    }
+    
+    // Clean up the actual message: Remove unwanted parts, trim, and normalize spaces
+    const cleanedMessage = actualMessage
+        .replace(/[\u2022|\u00B7]\s*/g, '') // Remove bullet points and extra spaces
+        .replace(/KvnTest Emp has requested changes in Certifications[^.]+/g, '') // Remove the part about the request being made
+        .replace(/\s+/g, ' ')  // Normalize spaces (replace multiple spaces with a single space)
+        .trim(); // Trim leading and trailing spaces
+    
+    // Log the cleaned actual message for debugging purposes (optional)
+    console.log(`Cleaned actual notification body: ${cleanedMessage}`);
+    
+    // Assert that the actual cleaned message contains the expected decline comment
+    expect(cleanedMessage).toContain('The request was declined by KvnTest Man');
+}
+
 
   async clickHrSignOutButton(){
    // Wait for the user profile to be visible before clicking
@@ -341,6 +439,55 @@ export class CertificationApprovalPage {
     expect(cleanedMessage).toContain('The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.');
   }
 
+  // Method to check if the notification with the expected title is visible
+  async isEmployeeNegativeNotificationWithTitleVisible(expectedTitle: string) {
+     // Locate the first notification title (use .first() to select the first element)
+  const notificationTitle = this.page.locator('.notifications-list .notification-title').first();
+
+  // Wait for the notification to be visible
+  await notificationTitle.waitFor({ state: 'visible', timeout: 20000 });
+
+  // Get the title text and trim it
+  const actualTitle = await notificationTitle.textContent();
+
+  // Normalize spaces (replace multiple spaces with a single space)
+  const normalizedActualTitle = actualTitle?.replace(/\s+/g, ' ').trim();
+
+  // Normalize the expected title in the same way
+  const normalizedExpectedTitle = expectedTitle.replace(/\s+/g, ' ').trim();
+
+  // Assert that the normalized actual title matches the normalized expected title
+  expect(normalizedActualTitle).toBe(normalizedExpectedTitle);
+  }
+
+  // Method to verify the notification body content for the employee
+  async verifyNegativeEmployeeNotificationBody(expectedMessage: string) {
+    // Locate the first (latest) notification
+    const latestNotification = this.page.locator(this.empNotificationMessage).first();
+    // Wait for the latest notification to be visible
+    await latestNotification.waitFor({ state: 'visible', timeout: 20000 });
+    // Get the actual message text from the latest notification
+    const actualMessage = await latestNotification.textContent(); // Use textContent to get the exact text
+    // Check if the message is null
+    if (actualMessage === null) {
+      throw new Error("Notification message is null, unable to verify the content.");
+    }
+    // Clean up the actual message: Remove unwanted parts, trim, and normalize spaces
+    const cleanedMessage = actualMessage
+      .replace(/[\u2022|\u00B7]\s*/g, '') // Remove bullet points and extra spaces
+      .replace(/KvnTest Emp has requested changes in Certifications[^.]+/g, '') // Remove the part about the request being made
+      .replace(/\s+/g, ' ')  // Normalize spaces (replace multiple spaces with a single space)
+      .trim(); // Trim leading and trailing spaces
+    // Log the cleaned actual message for debugging purposes (optional, can be removed later)
+    console.log(`Cleaned actual notification body: ${cleanedMessage}`);
+    // Assert that the actual cleaned message contains the expected comment
+    expect(cleanedMessage).toContain('The request was declined by KvnTest Man');
+  }
+
+
+
+
+
   // Method to navigate to the Add Certifications page
   async navigateToAddCertificationsPage() {
     // Locate and click the button or link to navigate to the Add Certifications page
@@ -370,5 +517,17 @@ export class CertificationApprovalPage {
   expect(certificationText).toContain(expectedCertificationText); // Verify it contains expected text
   }
 
+   // Method to verify that at least one certification is present
+    async verifyCertificationIsNotPresent(imageName: string) {
+   // Locate the label that contains the image name (file name displayed after "File saved")
+  const imageLocator = this.page.locator(`label:has-text("${imageName}")`);
+
+  // Check the count of elements matching the locator to ensure the image is not present
+  const imageCount = await imageLocator.count(); // Get the count of elements matching the image locator
+  
+  // Assert that the image is not present (i.e., count should be 0)
+  expect(imageCount).toBe(0); // If count is 0, the image is not present, which is what we want
+
+  }
 
 }
