@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "certification-process;successful-certification-submission-and-approval",
+        "id": "employee-certification-workflow;successful-certification-submission-and-approval",
         "keyword": "Scenario",
         "line": 4,
         "name": "Successful Certification Submission and Approval",
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1657255100
+              "duration": 1651190300
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11731154200
+              "duration": 5353070499
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4784595799
+              "duration": 4074900900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1290038500
+              "duration": 945120200
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 312937799
+              "duration": 473570299
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26797551899
+              "duration": 13751008499
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20118083899
+              "duration": 12717277799
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11943299
+              "duration": 14233500
             }
           },
           {
@@ -114,11 +114,11 @@
             "line": 12,
             "name": "the employee should see the request recorded message",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:59"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:81"
             },
             "result": {
               "status": "passed",
-              "duration": 15663979400
+              "duration": 10068106599
             }
           },
           {
@@ -127,11 +127,11 @@
             "line": 13,
             "name": "the employee clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:64"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:86"
             },
             "result": {
               "status": "passed",
-              "duration": 423630099
+              "duration": 430355600
             }
           },
           {
@@ -140,11 +140,11 @@
             "line": 14,
             "name": "the employee should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:69"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 4764683499
+              "duration": 3572246100
             }
           },
           {
@@ -153,11 +153,11 @@
             "line": 16,
             "name": "the manager is on the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:74"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:96"
             },
             "result": {
               "status": "passed",
-              "duration": 360352399
+              "duration": 504476999
             }
           },
           {
@@ -166,11 +166,11 @@
             "line": 17,
             "name": "the manager fills the login form with valid manager credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:79"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:101"
             },
             "result": {
               "status": "passed",
-              "duration": 1679284699
+              "duration": 2313797199
             }
           },
           {
@@ -179,11 +179,11 @@
             "line": 18,
             "name": "the manager clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:84"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:106"
             },
             "result": {
               "status": "passed",
-              "duration": 769955000
+              "duration": 1005809599
             }
           },
           {
@@ -192,11 +192,11 @@
             "line": 19,
             "name": "the manager should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:88"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 321275600
+              "duration": 510976999
             }
           },
           {
@@ -205,11 +205,11 @@
             "line": 21,
             "name": "the manager clicks on the My Tasks menu",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:93"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:115"
             },
             "result": {
               "status": "passed",
-              "duration": 1148550999
+              "duration": 1375622699
             }
           },
           {
@@ -218,11 +218,11 @@
             "line": 22,
             "name": "the manager clicks on the first task row",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:97"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:119"
             },
             "result": {
               "status": "passed",
-              "duration": 1407728799
+              "duration": 1471395000
             }
           },
           {
@@ -231,11 +231,11 @@
             "line": 23,
             "name": "the manager types in the comment box with the text \"Certification Valid. Request approve.\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:102"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:124"
             },
             "result": {
               "status": "passed",
-              "duration": 2891540800
+              "duration": 2001686199
             }
           },
           {
@@ -244,11 +244,11 @@
             "line": 24,
             "name": "the manager clicks the Approve button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:112"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:134"
             },
             "result": {
               "status": "passed",
-              "duration": 199233200
+              "duration": 221493199
             }
           },
           {
@@ -257,11 +257,11 @@
             "line": 25,
             "name": "the request should be approved successfully",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:117"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:139"
             },
             "result": {
               "status": "passed",
-              "duration": 1859518299
+              "duration": 1917247699
             }
           },
           {
@@ -270,11 +270,11 @@
             "line": 27,
             "name": "the manager clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:135"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:157"
             },
             "result": {
               "status": "passed",
-              "duration": 5458958299
+              "duration": 5601745299
             }
           },
           {
@@ -283,11 +283,11 @@
             "line": 28,
             "name": "the manager should be redirected to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:140"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:162"
             },
             "result": {
               "status": "passed",
-              "duration": 2813788699
+              "duration": 3206832099
             }
           },
           {
@@ -296,11 +296,11 @@
             "line": 29,
             "name": "the HR user is on the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:167"
             },
             "result": {
               "status": "passed",
-              "duration": 346602099
+              "duration": 547820700
             }
           },
           {
@@ -309,11 +309,11 @@
             "line": 30,
             "name": "the HR user fills the login form with valid HR credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:149"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:171"
             },
             "result": {
               "status": "passed",
-              "duration": 1450729600
+              "duration": 2011051600
             }
           },
           {
@@ -322,11 +322,11 @@
             "line": 31,
             "name": "the HR user clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:154"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:176"
             },
             "result": {
               "status": "passed",
-              "duration": 757985199
+              "duration": 986106499
             }
           },
           {
@@ -335,11 +335,11 @@
             "line": 32,
             "name": "the HR user should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:158"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:180"
             },
             "result": {
               "status": "passed",
-              "duration": 262616300
+              "duration": 412292900
             }
           },
           {
@@ -348,11 +348,11 @@
             "line": 34,
             "name": "the HR user hover on the notifications bell",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:163"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:185"
             },
             "result": {
               "status": "passed",
-              "duration": 1953192300
+              "duration": 2023292499
             }
           },
           {
@@ -361,11 +361,11 @@
             "line": 35,
             "name": "the HR user clicks on the first notification",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:168"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:190"
             },
             "result": {
               "status": "passed",
-              "duration": 1241991999
+              "duration": 1303862300
             }
           },
           {
@@ -374,11 +374,11 @@
             "line": 36,
             "name": "the HR user should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:172"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:194"
             },
             "result": {
               "status": "passed",
-              "duration": 1859512000
+              "duration": 1943720600
             }
           },
           {
@@ -387,11 +387,11 @@
             "line": 37,
             "name": "the HR user should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:177"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:199"
             },
             "result": {
               "status": "passed",
-              "duration": 12389599
+              "duration": 24989199
             }
           },
           {
@@ -400,11 +400,11 @@
             "line": 38,
             "name": "the HR user clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:192"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:214"
             },
             "result": {
               "status": "passed",
-              "duration": 377210700
+              "duration": 429302700
             }
           },
           {
@@ -413,11 +413,11 @@
             "line": 39,
             "name": "the HR user should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:196"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:218"
             },
             "result": {
               "status": "passed",
-              "duration": 2865263599
+              "duration": 3913724100
             }
           },
           {
@@ -430,7 +430,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35146099
+              "duration": 61969599
             }
           },
           {
@@ -443,7 +443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 929334699
+              "duration": 922179499
             }
           },
           {
@@ -456,7 +456,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 288395799
+              "duration": 372776299
             }
           },
           {
@@ -465,11 +465,11 @@
             "line": 44,
             "name": "the employee hover on the notifications bell",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:200"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:222"
             },
             "result": {
               "status": "passed",
-              "duration": 1949015899
+              "duration": 2022988299
             }
           },
           {
@@ -478,11 +478,11 @@
             "line": 45,
             "name": "the employee clicks on the first notification",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:204"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:226"
             },
             "result": {
               "status": "passed",
-              "duration": 940622400
+              "duration": 508573399
             }
           },
           {
@@ -491,11 +491,11 @@
             "line": 46,
             "name": "the employee should see the notification with the title \"Changes in Certifications for KvnTest Emp were approved\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:208"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:230"
             },
             "result": {
               "status": "passed",
-              "duration": 846611199
+              "duration": 1442259300
             }
           },
           {
@@ -504,11 +504,11 @@
             "line": 47,
             "name": "the employee should see the notification with the message \"The request was approved by KvnTest Man with the following comment: Certification Valid. Request approve.\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:213"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:235"
             },
             "result": {
               "status": "passed",
-              "duration": 13677700
+              "duration": 22190799
             }
           },
           {
@@ -521,7 +521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12225299799
+              "duration": 9321360100
             }
           },
           {
@@ -530,11 +530,11 @@
             "line": 49,
             "name": "the employee should see certificate is present",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:228"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:250"
             },
             "result": {
               "status": "passed",
-              "duration": 23160000
+              "duration": 40246400
             }
           },
           {
@@ -542,7 +542,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 750295299
+              "duration": 740176399
             }
           }
         ],
@@ -556,7 +556,7 @@
       },
       {
         "description": "",
-        "id": "certification-process;manager-rejects-the-certification-without-providing-a-reason-leading-to-confusion",
+        "id": "employee-certification-workflow;manager-rejects-the-certification-without-providing-a-reason-leading-to-confusion",
         "keyword": "Scenario",
         "line": 52,
         "name": "Manager rejects the certification without providing a reason leading to confusion",
@@ -566,7 +566,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1574638399
+              "duration": 1950706099
             }
           },
           {
@@ -579,7 +579,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14260062199
+              "duration": 4134055500
             }
           },
           {
@@ -592,7 +592,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2627205600
+              "duration": 2165751600
             }
           },
           {
@@ -605,7 +605,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1019988800
+              "duration": 1054735599
             }
           },
           {
@@ -618,7 +618,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 219986900
+              "duration": 460940700
             }
           },
           {
@@ -631,7 +631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16083895700
+              "duration": 11105640400
             }
           },
           {
@@ -644,7 +644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11299507099
+              "duration": 12273948499
             }
           },
           {
@@ -657,7 +657,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7283600
+              "duration": 13146600
             }
           },
           {
@@ -666,11 +666,11 @@
             "line": 60,
             "name": "the employee should see the request recorded message",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:59"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:81"
             },
             "result": {
               "status": "passed",
-              "duration": 9995790399
+              "duration": 9966570799
             }
           },
           {
@@ -679,11 +679,11 @@
             "line": 61,
             "name": "the employee clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:64"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:86"
             },
             "result": {
               "status": "passed",
-              "duration": 373573699
+              "duration": 429585099
             }
           },
           {
@@ -692,11 +692,11 @@
             "line": 62,
             "name": "the employee should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:69"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:91"
             },
             "result": {
               "status": "passed",
-              "duration": 3125655100
+              "duration": 3769118400
             }
           },
           {
@@ -705,11 +705,11 @@
             "line": 64,
             "name": "the manager is on the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:74"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:96"
             },
             "result": {
               "status": "passed",
-              "duration": 387210700
+              "duration": 532313499
             }
           },
           {
@@ -718,11 +718,11 @@
             "line": 65,
             "name": "the manager fills the login form with valid manager credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:79"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:101"
             },
             "result": {
               "status": "passed",
-              "duration": 1752942899
+              "duration": 2548735799
             }
           },
           {
@@ -731,11 +731,11 @@
             "line": 66,
             "name": "the manager clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:84"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:106"
             },
             "result": {
               "status": "passed",
-              "duration": 1020019700
+              "duration": 915149999
             }
           },
           {
@@ -744,11 +744,11 @@
             "line": 67,
             "name": "the manager should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:88"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:110"
             },
             "result": {
               "status": "passed",
-              "duration": 416619700
+              "duration": 431355600
             }
           },
           {
@@ -757,11 +757,11 @@
             "line": 69,
             "name": "the manager clicks on the My Tasks menu",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:93"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:115"
             },
             "result": {
               "status": "passed",
-              "duration": 1157477799
+              "duration": 1211200100
             }
           },
           {
@@ -770,11 +770,11 @@
             "line": 70,
             "name": "the manager clicks on the first task row",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:97"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:119"
             },
             "result": {
               "status": "passed",
-              "duration": 1386875000
+              "duration": 947112200
             }
           },
           {
@@ -783,11 +783,11 @@
             "line": 71,
             "name": "the manager leaves the comment box empty",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:107"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:129"
             },
             "result": {
               "status": "passed",
-              "duration": 2377057299
+              "duration": 1893973100
             }
           },
           {
@@ -796,11 +796,11 @@
             "line": 72,
             "name": "the manager clicks the Decline button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:123"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
             },
             "result": {
               "status": "passed",
-              "duration": 172400599
+              "duration": 230777600
             }
           },
           {
@@ -809,11 +809,11 @@
             "line": 73,
             "name": "the request should be declined successfully",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:129"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:151"
             },
             "result": {
               "status": "passed",
-              "duration": 851310200
+              "duration": 861576700
             }
           },
           {
@@ -822,11 +822,11 @@
             "line": 75,
             "name": "the manager clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:135"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:157"
             },
             "result": {
               "status": "passed",
-              "duration": 5956259900
+              "duration": 5630415799
             }
           },
           {
@@ -835,11 +835,11 @@
             "line": 76,
             "name": "the manager should be redirected to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:140"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:162"
             },
             "result": {
               "status": "passed",
-              "duration": 3375479900
+              "duration": 2905773199
             }
           },
           {
@@ -848,11 +848,11 @@
             "line": 77,
             "name": "the HR user is on the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:145"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:167"
             },
             "result": {
               "status": "passed",
-              "duration": 397743199
+              "duration": 582912699
             }
           },
           {
@@ -861,11 +861,11 @@
             "line": 78,
             "name": "the HR user fills the login form with valid HR credentials",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:149"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:171"
             },
             "result": {
               "status": "passed",
-              "duration": 1625546700
+              "duration": 1875639699
             }
           },
           {
@@ -874,11 +874,11 @@
             "line": 79,
             "name": "the HR user clicks the sign-in button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:154"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:176"
             },
             "result": {
               "status": "passed",
-              "duration": 810447000
+              "duration": 952827799
             }
           },
           {
@@ -887,11 +887,11 @@
             "line": 80,
             "name": "the HR user should see that the page title is \"SD Worx\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:158"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:180"
             },
             "result": {
               "status": "passed",
-              "duration": 314524099
+              "duration": 460649299
             }
           },
           {
@@ -900,11 +900,11 @@
             "line": 82,
             "name": "the HR user hover on the notifications bell",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:163"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:185"
             },
             "result": {
               "status": "passed",
-              "duration": 1961221499
+              "duration": 2011295299
             }
           },
           {
@@ -913,11 +913,11 @@
             "line": 83,
             "name": "the HR user clicks on the first notification",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:168"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:190"
             },
             "result": {
               "status": "passed",
-              "duration": 807809600
+              "duration": 1325723500
             }
           },
           {
@@ -926,11 +926,11 @@
             "line": 84,
             "name": "the HR user should see the decline notification with the title \"Changes in Certifications for KvnTest Emp were declined\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:182"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:204"
             },
             "result": {
               "status": "passed",
-              "duration": 2388133999
+              "duration": 2433254400
             }
           },
           {
@@ -939,11 +939,11 @@
             "line": 85,
             "name": "the HR user should see the decline notification with the message \"The request was declined by KvnTest Man\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:187"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:209"
             },
             "result": {
               "status": "passed",
-              "duration": 11474299
+              "duration": 16278900
             }
           },
           {
@@ -952,11 +952,11 @@
             "line": 86,
             "name": "the HR user clicks the sign-out button",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:192"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:214"
             },
             "result": {
               "status": "passed",
-              "duration": 486304100
+              "duration": 441728999
             }
           },
           {
@@ -965,11 +965,11 @@
             "line": 87,
             "name": "the HR user should be redirected correctly to the login page",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:196"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:218"
             },
             "result": {
               "status": "passed",
-              "duration": 2393380899
+              "duration": 3731657399
             }
           },
           {
@@ -982,7 +982,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51535100
+              "duration": 59792399
             }
           },
           {
@@ -995,7 +995,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 816450000
+              "duration": 916323299
             }
           },
           {
@@ -1008,7 +1008,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 325917599
+              "duration": 454648100
             }
           },
           {
@@ -1017,11 +1017,11 @@
             "line": 92,
             "name": "the employee hover on the notifications bell",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:200"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:222"
             },
             "result": {
               "status": "passed",
-              "duration": 1964024600
+              "duration": 2020968900
             }
           },
           {
@@ -1030,11 +1030,11 @@
             "line": 93,
             "name": "the employee clicks on the first notification",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:204"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:226"
             },
             "result": {
               "status": "passed",
-              "duration": 937668599
+              "duration": 984298999
             }
           },
           {
@@ -1043,11 +1043,11 @@
             "line": 94,
             "name": "the employee should see the decline notification with the title \"Changes in Certifications for KvnTest Emp were declined\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:218"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:240"
             },
             "result": {
               "status": "passed",
-              "duration": 857372499
+              "duration": 891793599
             }
           },
           {
@@ -1056,11 +1056,11 @@
             "line": 95,
             "name": "the employee should see the decline notification with the message \"The request was declined by KvnTest Man\"",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:223"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:245"
             },
             "result": {
               "status": "passed",
-              "duration": 10750199
+              "duration": 16335300
             }
           },
           {
@@ -1073,7 +1073,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8039754099
+              "duration": 10342145500
             }
           },
           {
@@ -1082,11 +1082,11 @@
             "line": 97,
             "name": "the employee should see \"negativeGP.jpg\" certificate is not present",
             "match": {
-              "location": "src\\test\\steps\\certificationApprovalSteps.ts:232"
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:254"
             },
             "result": {
               "status": "passed",
-              "duration": 13092300
+              "duration": 27252000
             }
           },
           {
@@ -1094,7 +1094,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 597162899
+              "duration": 745531500
             }
           }
         ],
@@ -1105,13 +1105,136 @@
           }
         ],
         "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "employee-certification-workflow;employee-uploads-a-file-exceeding-the-maximum-allowed-size.",
+        "keyword": "Scenario",
+        "line": 100,
+        "name": "Employee uploads a file exceeding the maximum allowed size.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1650041599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 101,
+            "name": "the employee is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3614180199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 102,
+            "name": "the employee fills the login form with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2907858300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "the employee clicks the sign-in button",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1072127399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "the employee should see that the page title is \"SD Worx\"",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 497007400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 105,
+            "name": "the employee navigates to the add certifications page",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12177314299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 106,
+            "name": "the employee uploads a file exceeding the maximum size limit of 5MB",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 726373699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 107,
+            "name": "the employee should see a \"Server error\" message indicating that the file size exceeds the limit",
+            "match": {
+              "location": "src\\test\\steps\\certificationApprovalSteps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25150200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 708979599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@edge",
+            "line": 99
+          }
+        ],
+        "type": "scenario"
       }
     ],
-    "id": "certification-process",
+    "id": "employee-certification-workflow",
     "line": 1,
     "keyword": "Feature",
-    "name": "Certification Process",
+    "name": "Employee Certification Workflow",
     "tags": [],
-    "uri": "src\\test\\features\\certification-approval.feature"
+    "uri": "src\\test\\features\\certification-process.feature"
   }
 ]

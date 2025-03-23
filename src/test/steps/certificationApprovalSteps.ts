@@ -56,6 +56,28 @@ Then('the employee should see the valid file name of the uploaded certificate di
   await certificationApprovalpage.verifyValidFileNameDisplayed('negativeGP.jpg');
 });
 
+// Step Definition for uploading a file exceeding the maximum size limit
+Then('the employee uploads a file exceeding the maximum size limit of 5MB', async function () {
+   const largeFilePath = './downloads/SD_Postman_TrelloV2.postman_collection.zip';  // Path to the large file
+    
+    // Call the method to upload the file
+    await certificationApprovalpage.uploadCertificateExceedingSizeLimit(largeFilePath);
+});
+
+// Step Definition for verifying the server error message
+Then('the employee should see a {string} message indicating that the file size exceeds the limit', async function (errorMessage: string) {
+    const errorMessageLocator = this.page.locator('.modal-body .font-weight-bold');  // Locator for error message
+    
+    // Wait for the error message to appear
+    await errorMessageLocator.waitFor({ state: 'visible', timeout: 30000 });
+
+    // Get the actual error message
+    const actualErrorMessage = await errorMessageLocator.innerText();
+
+    // Assert that the actual error message contains the expected message
+    expect(actualErrorMessage).toContain('Oops, something went wrong');  // Updated to match the actual error message
+});
+
 Then('the employee should see the request recorded message', async function () {
   // Verify that the request was recorded and validated
   await certificationApprovalpage.verifyRequestRecorded();

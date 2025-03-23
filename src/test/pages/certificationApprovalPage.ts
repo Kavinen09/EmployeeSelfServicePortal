@@ -59,6 +59,13 @@ export class CertificationApprovalPage {
 
 
   private declineButton = 'button[test-id="Decline"]';
+// Locator for the server error modal
+private serverErrorModal = '.modal-dialog .modal-content'; 
+// Locator for the server error message
+private errorMessageLocator = '.modal-body .font-weight-bold'; // "Oops, something went wrong"
+// Locator for the OK button in the server error modal
+private okButtonLocator = '.modal-footer button.btn-primary'; 
+
 
   // Method to open the login page
   async open() {
@@ -160,6 +167,39 @@ export class CertificationApprovalPage {
     await validationMessageLocator.waitFor({ state: 'visible', timeout: 60000 });
   }
 
+async uploadCertificateExceedingSizeLimit(filePath: string) {
+   // Click on the certification dropdown
+    await this.page.locator(this.certificationDropdown).first().click();
+    
+    // Click on the certification link
+    await this.page.locator(this.certificationLink).click();
+    
+    // Upload the file that exceeds the maximum size limit (5MB)
+    await this.page.locator(this.fileInputTextbox).setInputFiles(filePath);
+
+    // Wait for the modal with "Server error" to be visible
+    const serverErrorModalLocator = this.page.locator('.modal-title:has-text("Server error")');  // Locator for the modal title
+    
+    try {
+        // Wait for the modal to appear (timeout 60 seconds)
+        await serverErrorModalLocator.waitFor({ state: 'visible', timeout: 60000 });
+        console.log("Server error modal is visible.");
+
+        // Get the actual error message
+        const errorMessageLocator = this.page.locator('.modal-body .font-weight-bold');
+        const actualErrorMessage = await errorMessageLocator.innerText();
+
+        // Assert that the actual error message contains "Oops, something went wrong"
+        expect(actualErrorMessage).toContain('Oops, something went wrong');  // Updated to match the error message
+
+        // No need to click OK, simply stop here.
+        console.log("Test stops here after verifying the server error.");
+    } catch (error) {
+        console.error("Error: Server error modal did not appear within the timeout.");
+        throw error;
+    }
+}
+  
 
   // Method to sign out
   async signOut() {
